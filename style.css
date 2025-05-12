@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple: hsl(254, 88%, 90%);
+    --purple2: #7650dc;
+    --Yellow: hsl(31, 66%, 93%); 
+    --Yellow2: #ffcb6b;
+    --Black: hsl(0, 0%, 7%);
+    --pink: #ffd8de;
+    --gray2: #f3f3f3;
+    --white: hsl(0, 0%, 100%);
+    --Family: "DM Sans";
+    --radius: 10px;
+    --weight: 400;
+    --weight2: 500;
+
+}
+
+body{
+    min-height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--gray2);
+    font-family: var(--Family);
+    padding: 1rem;
+}
+section{
+    display: grid;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+    grid-template-areas: 
+    "svt fst fst fut"
+    "svt fst fst fut"
+    "svt scd trd fut"
+    "egt scd trd fut"
+    "egt sx fth fth"
+    ;
+    gap: 1rem;
+    /* margin: auto; */
+}
+section > div:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#con-1{
+    background-color: var(--purple2);
+    display: grid;
+    grid-area: fst;
+    color: var(--white);
+    text-align: center;
+    padding: 3rem ;
+    border-radius: var(--radius);
+    justify-content: center;
+    cursor: pointer;
+}
+#con-1 h2{
+    font-weight: var(--weight);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 27rem;
+    text-align: center;
+}
+#con-1 h2 #gold{
+    color: var(--Yellow2);
+}
+#con-1 h2 #faster{
+    font-style: italic;
+}
+#con-1 #gold-star{
+    margin: 1rem auto 0 auto;
+    width: 10rem;
+}
+#con-1 p{
+    color: var(--Yellow);
+    font-size: 1rem;
+    font-weight: 200;
+}
+#con-2{
+    background-color: var(--white);
+    display: grid;
+    grid-area: scd;
+    padding: .5rem 0 0 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+#platforms{
+    width: 15rem;
+    object-fit: cover;
+    object-position: left;
+}
+#con-2 h3, #con-3 h3{
+    font-size: 1.5rem;
+    font-weight: var(--weight2);
+    line-height: 1.4rem;
+    width: 10rem;
+}
+#con-3{
+    background-color: var(--Yellow2);
+    display: grid;
+    grid-area: trd;
+    border-radius: var(--radius);
+    padding: 1rem 1rem 0 1rem;
+    cursor: pointer;
+}
+#schedule-img{
+    width: 14rem;
+    object-fit: cover;
+    object-position: top;
+    height: 6rem;
+    margin: 1rem 0 0 0;
+
+}
+#con-4{
+    background-color: var(--purple);
+    display: grid;
+    grid-area: fut;
+    border-radius: var(--radius);
+    padding: 2rem 0 2rem 2rem;
+    cursor: pointer;
+}
+#con-4 h3{
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    width: 11rem;
+}
+#schedule-post{
+    width: 11rem;
+    height: 18rem;
+    object-fit: cover;
+    object-position: left;
+    padding: 1rem 0;
+}
+#optimize{
+    color: var(--Black);
+    font-weight: var(--weight2);
+    font-size: 1rem;
+    width: 11rem;
+    line-height: 1rem;
+    text-align: left;
+}
+#con-5{
+    background-color: var(--purple2);
+    display: grid;
+    grid-area: fth;
+    border-radius: var(--radius);
+    padding: 1rem;
+    cursor: pointer;
+}
+#inner-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#followers-con img{
+    width: 12rem;
+    margin-right: 1rem;
+}
+#grow-con p{
+    color: var(--white);
+    font-size: 2rem;
+    width: 15rem;
+    line-height: 1.8rem;
+}
+#con-6{
+    background-color: var(--white);
+    display: grid;
+    grid-area: sx;
+    border-radius: var(--radius);
+    padding: 1rem;
+    cursor: pointer;
+}
+#con-6 h3{
+    font-size: 3rem;
+    font-weight: var(--weight2);
+}
+#faster2{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#con-6 img{
+    margin: 1rem auto 0 auto;
+    width: 10rem;
+}
+#con-7{
+    background-color: var(--Yellow);
+    display: grid;
+    grid-area: svt;
+    border-radius: var(--radius);
+    padding:  1rem 1rem 0 1rem;
+    cursor: pointer;
+}
+#con-7 h3 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    width: 10rem;
+    color: var(--Black);
+    line-height: 1.8rem;
+    font-weight: var(--weight2);
+}
+#purple{
+    color: var(--purple2);
+    font-style: italic;
+}
+#con-7 img{
+    width: 10rem;
+    margin: 0;
+}
+#con-8{
+    background-color: var(--Yellow2);
+    display: grid;
+    grid-area: egt;
+    border-radius: var(--radius);
+    padding: 1rem 1rem 0 1rem;
+    cursor: pointer;
+}
+#con-8 h3{
+    font-size: 2rem;
+    width: 10rem;
+    color: var(--Black);
+    line-height: 2rem;
+    font-weight: var(--weight2);
+    text-align: left;
+}
+#con-8 img{
+    width: 10rem;
+}
+
+@media  (max-width: 479px) {
+    section {
+        display: grid;
+         grid-template-areas: 
+        "fst"
+        "scd"
+        "trd "
+        "fut"
+        "fth"
+        "sx"
+        "svt"
+        "egt"
+        ;
+        gap: 1.5rem;
+        padding: 1rem; 
+        margin-bottom: 0rem;
+    }
+    #con-1 {
+        display: grid;
+        grid-area: fst;
+        padding: 2rem 1rem;
+    }
+
+    #con-1 h2 {
+        font-size: 2.5rem; 
+        line-height: 2.5rem;
+        width: 15rem; 
+    }
+
+    #con-1 p {
+        font-size: 0.9rem; 
+    }
+    #con-1 #gold-star {
+        width: 8rem; 
+        margin-bottom: .5rem;
+    }
+    #con-2{
+        display: grid;
+        grid-area: scd;
+        padding: 1rem;
+    }
+     #platforms{
+        width: 20rem; 
+        height: auto;
+    }
+    #con-2 h3{
+    width: 19rem;
+    }
+    #con-3{
+        display: grid;
+        grid-area: trd;
+    }
+        #schedule-img{
+    width: 13rem;
+    height: 8rem;
+    margin: 1rem 0 0 0;
+    }
+    #con-3 h3{
+    width: 16rem;
+    }
+    #con-4{
+        display: grid;
+        grid-area: fut;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #con-4 h3{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 18rem;
+    }
+    #schedule-post{
+        width: 100%;
+        height: auto;
+    }
+    #optimize{
+        font-size: 1.2rem; 
+        width: 19rem;
+        text-align: center;
+    }
+    #con-5{
+        display: grid;
+        grid-area: fth;
+        background-color: var(--purple2);
+        padding: 1rem;
+    }
+    #inner-con{
+        display: flex;
+        flex-direction: column;
+    }
+    #followers-con img{
+        width: 14rem;
+        margin-right: 0;
+    }
+    #grow-con p{
+        font-size: 1.7rem;
+        width: 14rem;
+        line-height: 1.6rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    #con-6{
+        display: grid;
+        grid-area: sx;
+        padding: 1rem;
+    }
+    #con-6 h3{
+        font-size: 2.5rem;
+    }
+    #faster2{
+        font-size: 1rem;
+        text-align: left;
+    }
+    #con-6 img{
+        margin: 1rem 0;
+        width: 10rem;
+    }
+    #con-7{
+        display: grid;
+        grid-area: svt;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    #con-7 h3 {
+        margin-top: 0;
+        font-size: 1.8rem;
+        width: 18rem;
+        line-height: 1.8rem;
+    }
+    #con-7 img{
+        width: 10rem;
+        margin-top: 1rem;
+    }
+    #con-8{
+        display: grid;
+        grid-area: egt;
+    }
+    #con-8 h3 {
+        font-size: 1.9rem; 
+        line-height: 1.9rem;
+        width: 18rem;
+    }
+    #con-8 img {
+        width: 15rem; 
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+}
